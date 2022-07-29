@@ -3,20 +3,15 @@
 }
 
 .navbarLogo {
-  height: 48px;
+  height: 40px;
   object-fit: contain;
 }
 
 .navbarItem {
-  color: var(--accent);
+  color: var(--primary);
   text-transform: capitalize;
   cursor: pointer;
   margin-left: 16px;
-}
-
-.active {
-  color: var(--primary);
-  text-decoration: underline;
 }
 
 .navbarItem:hover {

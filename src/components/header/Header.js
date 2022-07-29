@@ -34,8 +34,6 @@ const Header = () => {
                 smooth={true}
                 offset={-64}
                 className="navbarItem"
-                activeClass="active"
-                spy={true}
               >
                 {section.text}
               </Link>

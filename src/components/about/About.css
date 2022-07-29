@@ -10,7 +10,7 @@
 }
 .aboutTitle {
   font-weight: 600;
-  font-size: var(--font-header);
+  font-size: var(--font-title);
 }
 .aboutContent {
   display: flex;

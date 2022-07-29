@@ -1,15 +1,57 @@
 .homeWrapper {
   font-weight: 600;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--page-height);
+}
+
+.homeWrapperInner {
+  max-width: 70%;
 }
 
 .homeTitle {
   font-size: var(--font-title);
+  margin: 32px 0px;
 }
 
 .homeTextRow:first-of-type {
   color: var(--primary);
 }
 
-.homeTextRow:last-of-type {
-  color: var(--accent);
+.homeSubtitle {
+  max-width: 500px;
+  margin: 16px 0px;
+}
+
+.linksComponent {
+  position: absolute;
+  left: 0px;
+  margin: 0px 16px;
+}
+
+.linkBoxWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 62px;
+  width: 62px;
+}
+
+.linkBox {
+  height: 54px;
+  width: 54px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 4px 8px rgb(0 0 0 / 0.4);
+  transition: 0.3s;
+}
+
+.linkBox:hover {
+  height: 58px;
+  width: 58px;
 }
