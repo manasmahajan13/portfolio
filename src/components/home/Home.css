@@ -1,0 +1,15 @@
+.homeWrapper {
+  font-weight: 600;
+}
+
+.homeTitle {
+  font-size: var(--font-title);
+}
+
+.homeTextRow:first-of-type {
+  color: var(--primary);
+}
+
+.homeTextRow:last-of-type {
+  color: var(--accent);
+}

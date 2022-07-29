@@ -1,0 +1,5 @@
+.portfolioWrapperMain {
+  background-color: var(--background);
+  color: var(--primary);
+  font-size: var(--font-primary);
+}
