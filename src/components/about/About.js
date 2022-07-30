@@ -1,21 +1,23 @@
 import React from "react";
 import "./About.css";
 import ProfileImage from "../../assets/images/profile-image.png";
+import "aos/dist/aos.css";
+
 const About = () => {
   return (
     <div className="aboutWrapper" id="about">
       <div className="aboutWrapperInner">
         <div className="aboutContent">
-          <div className="aboutHeader">
+          <div className="aboutHeader" data-aos="fade-up">
             <div className="aboutSubtitleUpper">About Me</div>
             <div className="aboutTitle">Who I Am</div>
             <div className="aboutSubtitle">
-              <span className="aboutSubtitleAccented">I'm Manas. </span>
+              <span className="aboutSubtitleAccented">Hi, I'm Manas. </span>
               <span>I develop apps and websites, and I love what I do. </span>
             </div>
           </div>
 
-          <div className="profileText">
+          <div className="profileText" data-aos="fade-up">
             I’ve been working on web development for a year now, and on iOS
             development for 3 months. I have developed several projects
             utilizing React for web and Swift for iOS development. I love the

@@ -1,3 +1,49 @@
 .skillsWrapper {
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.skillsWrapperInner {
+  width: 75%;
+  max-width: 750px;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillsHeader {
+  margin-bottom: 32px;
+}
+
+.skillsTitle {
+  font-size: var(--font-title);
+}
+
+.skillsSubtitle {
+  font-size: var(--font-header);
+  color: var(--accent);
+}
+
+.skillsGridItem {
+  display: flex;
+  justify-content: center;
+}
+
+.skillBox {
+  padding: 16px 32px;
+  border-radius: 16px;
+  background-color: var(--background-secondary);
+}
+
+.skillLogo {
+  background-color: var(--secondary);
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

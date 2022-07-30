@@ -3,6 +3,8 @@ import "./Home.css";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import AssignmentIcon from "@mui/icons-material/Assignment";
+import "aos/dist/aos.css";
+import { openInNewTab } from "../../helpers";
 
 const linksArray = [
   {
@@ -17,7 +19,7 @@ const linksArray = [
   },
   {
     name: "Resume",
-    link: "https://github.com/manasmahajan13",
+    link: "",
     icon: AssignmentIcon,
   },
 ];
@@ -27,21 +29,35 @@ const Home = () => {
     <div className="homeWrapper">
       <div className="homeWrapperInner">
         <div className="homeTitle">
-          <div className="homeTextRow">
+          <div
+            className="homeTextRow"
+            data-aos="fade-left"
+            data-aos-delay="100"
+          >
             Hello, I'm <span style={{ color: "var(--accent)" }}>Manas</span>
           </div>
-          <div>A Web and iOS developer</div>
+          <div data-aos="fade-left" data-aos-delay="1000">
+            A Web and iOS developer
+          </div>
         </div>
-        <div className="homeSubtitle">
+        <div
+          className="homeSubtitle"
+          data-aos-duration="2000"
+          data-aos="fade-up"
+          data-aos-delay="2000"
+        >
           I'm focused on developing beautiful Web and iOS applications while
           constantly learning & exploring new technologies
         </div>
       </div>
-      <div className="linksComponent">
+      <div className="linksComponent" data-aos="fade-in" data-aos-delay="2500">
         {linksArray.map((linkObject) => {
           return (
             <div className="linkBoxWrapper">
-              <div className="linkBox">
+              <div
+                className="linkBox"
+                onClick={() => openInNewTab(linkObject.link)}
+              >
                 <linkObject.icon fontSize="large" />
               </div>
             </div>

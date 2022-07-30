@@ -22,7 +22,7 @@ const Header = () => {
     <AppBar
       position="sticky"
       elevation={0}
-      style={{ background: "transparent" }}
+      style={{ background: "transparent", backdropFilter: "blur(3px)" }}
     >
       <Toolbar
         sx={{
