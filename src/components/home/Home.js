@@ -24,7 +24,7 @@ const linksArray = [
 
 const Home = () => {
   return (
-    <div className="homeWrapper" id="home">
+    <div className="homeWrapper">
       <div className="homeWrapperInner">
         <div className="homeTitle">
           <div className="homeTextRow">

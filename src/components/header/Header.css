@@ -1,5 +1,10 @@
 .navbarLogoWrapper {
   flex-grow: 1;
+  font-size: var(--font-header);
+}
+
+.navbarLogoWrapper span {
+  color: var(--accent);
 }
 
 .navbarLogo {
@@ -12,8 +17,24 @@
   text-transform: capitalize;
   cursor: pointer;
   margin-left: 16px;
+  display: inline-block;
+  position: relative;
 }
 
-.navbarItem:hover {
-  color: var(--secondary);
+.navbarItem:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--accent);
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+}
+
+.navbarItem:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
