@@ -45,7 +45,7 @@ const Skills = () => {
               >
                 <div className="skillBox">
                   <div className="skillLogo">{skill.logo}</div>
-                  <div> {skill.name}</div>
+                  <div className="skillName"> {skill.name}</div>
                 </div>
               </Grid>
             );

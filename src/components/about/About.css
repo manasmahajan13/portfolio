@@ -1,5 +1,5 @@
 .aboutWrapper {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,6 +8,7 @@
 .aboutWrapperInner {
   display: flex;
   width: 75%;
+  margin: 32px 0px;
 }
 .aboutHeader {
   display: flex;

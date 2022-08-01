@@ -1,5 +1,5 @@
 .contactWrapper {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,13 +8,14 @@
 }
 .contactTitle {
   font-size: var(--font-title);
-  margin-bottom: 32px;
+  margin: 32px 0px;
 }
 .contactWrapperInner {
   display: flex;
   flex-direction: column;
   width: 75%;
   max-width: 800px;
+  margin-bottom: 32px;
 }
 label {
   color: var(--accent);
