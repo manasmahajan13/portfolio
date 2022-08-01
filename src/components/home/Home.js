@@ -49,6 +49,24 @@ const Home = () => {
           I'm focused on developing beautiful Web and iOS applications while
           constantly learning & exploring new technologies
         </div>
+        <div
+          className="linksComponentMobile"
+          data-aos="fade-in"
+          data-aos-delay="3000"
+        >
+          {linksArray.map((linkObject) => {
+            return (
+              <div className="linkBoxWrapper" key={linkObject.name}>
+                <div
+                  className="linkBox"
+                  onClick={() => openInNewTab(linkObject.link)}
+                >
+                  <linkObject.icon fontSize="large" />
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </div>
       <div className="linksComponent" data-aos="fade-in" data-aos-delay="2500">
         {linksArray.map((linkObject) => {

@@ -17,7 +17,6 @@ code {
   --navbar-height: 64px;
   --background: #252525;
   --background-secondary: #212121;
-  /* --background-secondary: #e6333310; */
   --primary: #ffffff;
   --secondary: #efefef;
   --accent: #e63333;
@@ -25,4 +24,9 @@ code {
   --font-secondary: 14px;
   --font-title: 44px;
   --font-header: 20px;
+
+  --font-primary-mobile: 14px;
+  --font-secondary-mobile: 12px;
+  --font-title-mobile: 32px;
+  --font-header-mobile: 18px;
 }

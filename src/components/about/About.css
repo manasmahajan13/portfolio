@@ -8,7 +8,7 @@
 .aboutWrapperInner {
   display: flex;
   width: 75%;
-  margin: 32px 0px;
+  margin: 96px 0px;
 }
 .aboutHeader {
   display: flex;
@@ -56,4 +56,26 @@
 
 .aboutSubtitleAccented {
   color: var(--accent);
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutTitle {
+    font-size: var(--font-title-mobile);
+  }
+  .aboutSubtitleUpper {
+    font-size: var(--font-header-mobile);
+  }
+  .aboutSubtitle {
+    font-size: var(--font-header-mobile);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .profileImageWrapper {
+    display: none;
+  }
+
+  .aboutContent {
+    width: 100%;
+  }
 }

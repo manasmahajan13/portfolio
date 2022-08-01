@@ -56,3 +56,20 @@
   height: 58px;
   width: 58px;
 }
+
+.linksComponentMobile {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .linksComponent {
+    display: none;
+  }
+  .linksComponentMobile {
+    display: flex;
+    justify-content: center;
+  }
+  .homeTitle {
+    font-size: var(--font-title-mobile);
+  }
+}

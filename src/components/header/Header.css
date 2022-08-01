@@ -7,6 +7,14 @@
   color: var(--accent);
 }
 
+.sectionsDrawerButton {
+  display: none;
+}
+
+.navbarLogoWrapperMobile {
+  display: none;
+}
+
 .navbarLogo {
   height: 40px;
   object-fit: contain;
@@ -37,4 +45,49 @@
 .navbarItem:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.sectionsDrawer {
+  width: 250px;
+  background-color: var(--background-secondary);
+  height: 100%;
+}
+.sectionsDrawerHeader {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px;
+}
+.sectionDrawerButton {
+  width: 100%;
+}
+
+.sectionDrawerLink {
+  color: var(--primary);
+  width: 100%;
+  display: flex;
+  margin: 8px 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbarLogoWrapperMobile {
+    display: flex;
+    flex-grow: 1;
+    font-size: var(--font-header);
+  }
+
+  .navbarLogoWrapperMobile span {
+    color: var(--accent);
+  }
+
+  .navbarLogoWrapper {
+    display: none;
+  }
+
+  .navbarItemsWrapper {
+    display: none;
+  }
+
+  .sectionsDrawerButton {
+    display: inline-block;
+  }
 }

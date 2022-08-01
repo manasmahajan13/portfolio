@@ -3,3 +3,9 @@
   color: var(--primary);
   font-size: var(--font-primary);
 }
+
+@media only screen and (max-width: 768px) {
+  .portfolioWrapperMain {
+    font-size: var(--font-primary-mobile);
+  }
+}

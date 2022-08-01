@@ -11,6 +11,7 @@
   max-width: 750px;
   justify-content: center;
   align-items: center;
+  margin: 96px 0px;
 }
 
 .skillsHeader {
@@ -47,7 +48,7 @@
   align-items: center;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
   .skillLogo {
     margin: 0;
     height: 50px;
@@ -60,5 +61,13 @@
 
   .skillName {
     display: none;
+  }
+
+  .skillsTitle {
+    font-size: var(--font-title-mobile);
+  }
+
+  .skillsSubtitle {
+    font-size: var(--font-header-mobile);
   }
 }
