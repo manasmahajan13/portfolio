@@ -53,7 +53,7 @@ const Home = () => {
       <div className="linksComponent" data-aos="fade-in" data-aos-delay="2500">
         {linksArray.map((linkObject) => {
           return (
-            <div className="linkBoxWrapper">
+            <div className="linkBoxWrapper" key={linkObject.name}>
               <div
                 className="linkBox"
                 onClick={() => openInNewTab(linkObject.link)}

@@ -16,6 +16,10 @@ const sectionsArray = [
     text: "Skills",
     link: "skills",
   },
+  {
+    text: "Contact",
+    link: "contact",
+  },
 ];
 const Header = () => {
   return (
@@ -36,7 +40,12 @@ const Header = () => {
         <div className="navbarItemsWrapper">
           {sectionsArray.map((section) => {
             return (
-              <Link to={section.link} smooth={true} className="navbarItem">
+              <Link
+                to={section.link}
+                smooth={true}
+                className="navbarItem"
+                key={section.link}
+              >
                 {section.text}
               </Link>
             );

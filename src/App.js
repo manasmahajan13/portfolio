@@ -6,6 +6,7 @@ import Skills from "./components/skills/Skills";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import Contact from "./components/contact/Contact";
 
 function App() {
   useEffect(() => {
@@ -17,6 +18,7 @@ function App() {
       <Home />
       <About />
       <Skills />
+      <Contact />
     </div>
   );
 }

@@ -35,11 +35,10 @@
   padding: 16px 32px;
   border-radius: 16px;
   background-color: var(--background-secondary);
+  box-shadow: 4px 4px 8px rgb(0 0 0 / 0.4);
 }
 
 .skillLogo {
-  background-color: var(--secondary);
-  border-radius: 50%;
   height: 80px;
   width: 80px;
   margin-bottom: 16px;

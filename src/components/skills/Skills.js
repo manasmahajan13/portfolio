@@ -7,6 +7,10 @@ import { ReactComponent as JsLogo } from "../../assets/svg/js-logo.svg";
 import { ReactComponent as TsxLogo } from "../../assets/svg/tsx-logo.svg";
 import { ReactComponent as ReactLogo } from "../../assets/svg/react-logo.svg";
 import { ReactComponent as ReduxLogo } from "../../assets/svg/redux-logo.svg";
+import { ReactComponent as SwiftLogo } from "../../assets/svg/swift-logo.svg";
+import { ReactComponent as SwiftUiLogo } from "../../assets/svg/swiftui-logo.svg";
+import { ReactComponent as CppLogo } from "../../assets/svg/c++logo.svg";
+
 import "aos/dist/aos.css";
 
 const skillsArray = [
@@ -16,9 +20,9 @@ const skillsArray = [
   { name: "TypeScript", logo: <TsxLogo /> },
   { name: "React", logo: <ReactLogo /> },
   { name: "Redux", logo: <ReduxLogo /> },
-  { name: "Swift" },
-  { name: "SwiftUI" },
-  { name: "C++" },
+  { name: "Swift", logo: <SwiftLogo /> },
+  { name: "SwiftUI", logo: <SwiftUiLogo /> },
+  { name: "C++", logo: <CppLogo /> },
 ];
 
 const Skills = () => {
@@ -32,7 +36,13 @@ const Skills = () => {
         <Grid container spacing={2} className="skillsGrid">
           {skillsArray.map((skill) => {
             return (
-              <Grid item xs={4} className="skillsGridItem" data-aos="fade-up">
+              <Grid
+                item
+                xs={4}
+                className="skillsGridItem"
+                data-aos="fade-up"
+                key={skill.name}
+              >
                 <div className="skillBox">
                   <div className="skillLogo">{skill.logo}</div>
                   <div> {skill.name}</div>
