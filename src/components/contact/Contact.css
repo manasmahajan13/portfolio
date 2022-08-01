@@ -44,6 +44,11 @@ input:focus {
   outline: none;
 }
 
+.thanksMessage {
+  font-size: var(--font-header);
+  color: var(--accent);
+}
+
 textarea {
   resize: none;
 }
