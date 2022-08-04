@@ -5,6 +5,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import AssignmentIcon from "@mui/icons-material/Assignment";
 import "aos/dist/aos.css";
 import { openInNewTab } from "../../helpers";
+import { Tooltip } from "@mui/material";
 
 const linksArray = [
   {
@@ -72,12 +73,19 @@ const Home = () => {
         {linksArray.map((linkObject) => {
           return (
             <div className="linkBoxWrapper" key={linkObject.name}>
-              <div
-                className="linkBox"
-                onClick={() => openInNewTab(linkObject.link)}
+              <Tooltip
+                title={linkObject.name}
+                placement="right-end"
+                enterDelay={500}
+                leaveDelay={200}
               >
-                <linkObject.icon fontSize="large" />
-              </div>
+                <div
+                  className="linkBox"
+                  onClick={() => openInNewTab(linkObject.link)}
+                >
+                  <linkObject.icon fontSize="large" />
+                </div>
+              </Tooltip>
             </div>
           );
         })}
